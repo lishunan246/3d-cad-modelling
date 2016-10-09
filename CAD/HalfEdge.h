@@ -68,7 +68,7 @@ public:
  * \brief 
  * \return 
  */
-pS mvfs(pV, pF)
+pS mvfs(pV v, pF)
 {
 	auto s = std::make_shared<Solid>();
 	auto f = std::make_shared<Face>();
@@ -80,5 +80,19 @@ pS mvfs(pV, pF)
 	f->loop = l;
 	l->face = f;
 
+
+
 	return s;
 }
+
+void kvsf(pV, pF);
+void mev(pV, pV, pE);
+void kev(pE, pV);
+void mef(pV, pV, pF, pF, pE);
+void kef(pE);
+void mekr(pV, pV, pE);
+void kemr(pE);
+void kfmrh(pF, pF);
+void mfkrh(pF, pF);
+void semv(pE, pV, pE);
+void jekv(pE, pE);
